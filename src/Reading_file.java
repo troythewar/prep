@@ -10,7 +10,7 @@ public class Reading_file {
 	void ReadFile(){
 		try
 		{
-		BufferedReader br = new BufferedReader(new FileReader("D:\\camera.log"));
+		BufferedReader br = new BufferedReader(new FileReader("D:\\camera.txt"));
 		//int data=br.read();
 		
 		
@@ -19,7 +19,7 @@ public class Reading_file {
 			lines=br.readLine();
 			Pattern r=Pattern.compile(pattern);
 			Matcher m=r.matcher(lines);
-			if(m.find())
+			while(m.find())
 				{
 				System.out.print(lines);
 				}
