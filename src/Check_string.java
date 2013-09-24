@@ -16,12 +16,19 @@ public class Check_string {
 		{
 			
 			s=readers.readLine();
-			if(s.startsWith("#")|| s.startsWith("@"))
+			if(s!=null)
+			{
+			if(s.startsWith("#")||s.startsWith("@"))
 			{
 				continue;
 			}
+			/*else if(s.startsWith("\n")) 
+			{
+				continue;
+			}*/
 			else{
 				System.out.println(s);
+			}
 			}
 			//Scanner sc =new Scanner(s);
 			//sc.skip("##");
